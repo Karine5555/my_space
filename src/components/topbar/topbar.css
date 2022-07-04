@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/*----------------------------------------------------------------------------*/
+.topbarContainer {
+    height: 68px; 
+    width: 1920px;
+    background-color: #3867D6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 999;
+    
+
+}
+.topbarLeft{
+    flex:1;
+    display: flex;
+    
+    
+}
+.topbarImgLogo{
+    width: 39px;
+    height: 37px;
+    cursor: pointer;
+    margin:15px 10px 15px 30px;
+    
+
+}
+.logo{
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 18px;
+    color:white;
+    margin-top: 15px;
+    font-family: Arial;
+}
+.topbarCenter{
+    flex:6;
+}
+
+.searchbar label{
+    width: 492.34px;
+    height: 44px;
+    margin: 12px auto;
+    background-color:#4159B8;
+    border-radius: 12px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    overflow: hidden;
+    
+}
+.searchIcon{
+    font-size: 30px !important;
+    margin-right: 10px;
+    color:#4C67D5;
+    
+}
+.searchInput{
+    border: none;
+    width: 80%;
+    height: 100%;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.1px;
+    background-color:#4159B8;
+    
+}
+.searchInput::placeholder{
+    color:#4C67D5;
+    font-style: 10px;
+    font-weight: 400;
+}
+.searchInput:focus{
+    outline: none;
+    color:white;
+    font-weight:normal ;
+    
+}
+
+.searchbar label:hover,
+.searchInput:hover{
+    background-color:#1E3B80
+}
+
+
+.topbarRight{
+    flex:2;
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    padding-right: 20px;
+    color:white;
+}
+.topbarIconChat{
+border-left: 2px solid rgb(178, 176, 176);
+padding: 0 20px;
+}
+.topbarIconItem1,
+.topbarIconItem2,
+.topbarIconItem3{
+    cursor: pointer;
+    position: relative;
+}
+.topbarIconBadge1,
+.topbarIconBadge2{
+    width: 10px;
+    height: 10px;
+    background-color:red;
+    color:white;
+    border-radius: 50%;
+    font-size:8px;
+    text-align: center;
+    position: absolute;
+    
+    
+}
+.topbarIconBell{
+border-right: 2px solid rgb(178, 176, 176);
+margin-right: 30px;
+padding-right: 20px;
+}
+
+
+/* @media screen and  (max-width:866px){
+    .searchbar{
+        display: none;
+    }
+    }
+@media screen and (max-width:349px) {
+    .topbarRight{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:181px) {
+    .logo{
+        display: none;
+    }
+} */
+
